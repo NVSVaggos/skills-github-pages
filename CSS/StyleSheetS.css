@@ -1,0 +1,89 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* κουμπί ΠΙΣΩ */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.back-link {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* τίτλο : Social Media */
+.social-title {
+    text-align: center;
+    text-decoration: underline;
+    color: #333;
+    margin-top: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* κουτάκια των social media */
+.social-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+/* εικονίδιο social */
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* σκιά */
+    transition: transform 0.3s ease; /*Εφέ με ποντίκι */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Ζουμ όταν το ποντίκι περνάει πάνω από το εικονίδιο (εδώ 10%) */
+}
+
+.social-icon img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.social-icon span {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Για links του social media */
+.social-icon a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
